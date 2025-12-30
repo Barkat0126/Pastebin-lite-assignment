@@ -1,0 +1,17 @@
+﻿# Node
+node_modules/
+.npmrc
+npm-debug.log*
+package-lock.json
+# Next.js
+.next/
+.next-static/
+out/
+# Env
+.env*
+.vercel/
+# Logs
+*.log
+# OS
+.DS_Store
+Thumbs.db
