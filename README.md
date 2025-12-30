@@ -53,6 +53,9 @@ A minimal, production-ready paste service built with Next.js (App Router). Creat
   - Output directory: `.next`
   - Environment: set Upstash vars if using Redis
 
+## Live Example
+- Example paste: `https://pastebin-lite-assignment.vercel.app/p/sxDb09808Fc0`
+
 ## Notes
 - In-memory storage is for local dev only; use Redis in production.
 - Paste expiry is based on `createdAtMs + ttl_seconds`; view limits are enforced atomically.
