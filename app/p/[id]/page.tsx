@@ -7,7 +7,7 @@ export const dynamic = "force-dynamic";
 
 export default async function PastePage({ params, searchParams }: { params: { id: string }, searchParams: Record<string, string | string[] | undefined> }) {
   const id = params.id;
-  const nowMs = getNowMsFromHeader(headers(), Boolean(searchParams.preview));
+  const nowMs = getNowMsFromHeader(Boolean(searchParams.preview), headers().get("x-test-now-ms"));
 
   const record = await getRecord(id);
   const views = await getViews(id);
